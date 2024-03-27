@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myportfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="Desktop-nav">
+        <div class="logo">Desmond Idemudia</div>
+        <div>
+            <ul class="nav_links">
+                <li><a href="#About">About</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contacts">Contact</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <nav id="hamburger-nav">
+    <div class="logo">Desmond Idemudia</div>
+    <div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="togglemenu()">
+        
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+    <div class="menu-links">
+        <li><a href="#About" onclick="togglemenu()" >About</a></li>
+        <li><a href="#Experience" onclick="togglemenu()" >Experience</a></li>
+        <li><a href="#Projects" onclick="togglemenu()" >Projects</a></li>
+        <li><a href="#Contacts" onclick="togglemenu()" >Contact</a></li>
+    </div>
+    </div>
+    </nav>
+
+    
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="images/Image2.jpg" alt="About me pic" width="200" height="300">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I am</p>
+            <h1 class="tittle">Desmond Idemudia</h1>
+            <p class="section__text__p2">Frontend Engineer</p>
+
+        <div class="btn-container">
+            <button class="btn btn-colour-2">
+                Download CV
+            </button>
+            <button class="btn btn-colour-1" onclick="location.href='./#Contacts'">
+                Contact Info
+            </button>
+        </div>    
+        </div>
+        <div class="social-conatiner">
+            <img src="Images/linkedin-logo-linkedin-icon-transparent-free-png.jpg" 
+            alt="linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/desmondidemudia/'" width="40" height="40">
+            
+            <img src="Images/25231.png"
+            alt="github profile" class="icon" onclick="location.href='https://github.com/'" width="30" height="30">
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
